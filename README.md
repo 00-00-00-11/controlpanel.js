@@ -12,9 +12,22 @@ ControlPanel.js is an easy to use API wrapper for [ControlPanel](https://control
 npm i controlpanel.js
 ```
 
-### Documentation
+### Example
 
-(comming soon)
+```js
+const { Client } = require('controlpanel.js')
+
+const client = new Client({
+    host: 'YOUR DASHBOARD URL',
+    apikey: 'YOUR DASHBOARD API KEY'
+});
+
+
+client.getUsers().then(response => { 
+    console.log(response)
+})
+
+```
 
 ### Report Bugs
 

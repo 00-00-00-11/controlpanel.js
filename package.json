@@ -1,0 +1,30 @@
+{
+  "name": "controlpanel.js",
+  "version": "1.0.0",
+  "description": "API wrapper for ControlPanel",
+  "main": "src/index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hiekki4/controlpanel.js.git"
+  },
+  "keywords": [
+    "controlpanel",
+    "wrapper",
+    "node"
+  ],
+  "author": "Hiekki4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hiekki4/controlpanel.js/issues"
+  },
+  "homepage": "https://github.com/Hiekki4/controlpanel.js#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0"
+  }
+}

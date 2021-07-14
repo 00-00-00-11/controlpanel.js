@@ -17,9 +17,10 @@ npm i controlpanel.js
 
 ### Report Bugs
 
-To report bugs and issues please use the GitHub issue reporting tool: https://github.com/Hiekki4/ControlPanel.js/issues. Any bugs and issues reports are very much appreciated since it helps us to improve EveCloud Miner. Thank you.
+To report bugs and issues please use the GitHub issue reporting tool: https://github.com/Hiekki4/ControlPanel.js/issues. Any bugs and issues reports are very much appreciated since it helps us to improve ControlPanel.js. Thank you.
 
 ### License
+
 ```
 Copyright (c) 2021 Hiekki4 (hiekki@evecloud.xyz)
 

@@ -4,7 +4,8 @@
   "description": "API wrapper for ControlPanel",
   "main": "src/index.js",
   "scripts": {
-    "test": "node test/index.js"
+    "test": "node test/index.js",
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",

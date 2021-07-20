@@ -3,7 +3,6 @@ const Servers = require('./methods/server');
 const Users = require('./methods/user');
 const Vouchers = require('./methods/voucher');
 
-
 function Mixins(derivedCtor, baseCtors) {
     baseCtors.forEach(baseCtor => {
         Object.getOwnPropertyNames(baseCtor.prototype).forEach(name => {

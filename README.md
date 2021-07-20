@@ -18,8 +18,8 @@ npm i controlpanel.js
 const { Client } = require('controlpanel.js')
 
 const client = new Client({
-    host: 'YOUR DASHBOARD URL',
-    apikey: 'YOUR DASHBOARD API KEY'
+    host: 'https://dash.evecloud.xyz',
+    apikey: 'brruirbjh9thj9enb9tnbenrrg9trgjuod'
 });
 
 

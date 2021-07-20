@@ -13,12 +13,12 @@ class Servers extends ClientRequest {
             }).then(response => {
                 resolve(response.data);
             }).catch(error => {
-                reject(this.HttpError(error));
+                reject(error);
             });
         });
     }
 
-    getServerDetails(serverid) {
+    getServerData(serverid) {
         return new Promise((resolve, reject) => {
             axios({
                 method: 'GET',
@@ -28,7 +28,7 @@ class Servers extends ClientRequest {
             }).then(response => {
                 resolve(response.data);
             }).catch(error => {
-                reject(this.HttpError(error));
+                reject(error);
             });
         });
     }
@@ -43,7 +43,7 @@ class Servers extends ClientRequest {
             }).then(response => {
                 resolve(response.data);
             }).catch(error => {
-                reject(this.HttpError(error));
+                reject(error);
             });
         });
     }
@@ -58,7 +58,7 @@ class Servers extends ClientRequest {
             }).then(response => {
                 resolve(response.data);
             }).catch(error => {
-                reject(this.HttpError(error));
+                reject(error);
             });
         });
     }
@@ -73,7 +73,7 @@ class Servers extends ClientRequest {
             }).then(response => {
                 resolve(response.data);
             }).catch(error => {
-                reject(this.HttpError(error));
+                reject(error);
             });
         });
     }

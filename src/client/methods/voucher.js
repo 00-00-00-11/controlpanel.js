@@ -13,12 +13,12 @@ class Vouchers extends ClientRequest {
             }).then(response => {
                 resolve(response.data);
             }).catch(error => {
-                reject(this.HttpError(error));
+                reject(error);
             });
         });
     }
 
-    getVouchersDetails(voucherid) {
+    getVoucherData(voucherid) {
         return new Promise((resolve, reject) => {
             axios({
                 method: 'GET',
@@ -28,12 +28,12 @@ class Vouchers extends ClientRequest {
             }).then(response => {
                 resolve(response.data);
             }).catch(error => {
-                reject(this.HttpError(error));
+                reject(error);
             });
         });
     }
 
-    createVoucher({ memo: memo, code: code, uses: uses, credits: credits, expires: expires}) {
+    createVoucher(memo, code, uses, credits, expires) {
         return new Promise((resolve, reject) => {
             axios({
                 method: 'POST',
@@ -48,14 +48,14 @@ class Vouchers extends ClientRequest {
                 },
                 headers: this.headers()
             }).then(response => {
-                resolve(response.data);
+                resolve(response);
             }).catch(error => {
-                reject(this.HttpError(error));
+                reject(error);
             });
         });
     }
 
-    updateUserDetails(voucherid, { memo: memo, code: code, uses: uses, credits: credits, expires: expires}) {
+    updateVoucherData(voucherid, memo, code, uses, credits, expires) {
         return new Promise((resolve, reject) => {
             axios({
                 method: 'PATCH',
@@ -72,7 +72,7 @@ class Vouchers extends ClientRequest {
             }).then(response => {
                 resolve(response.data);
             }).catch(error => {
-                reject(this.HttpError(error));
+                reject(error);
             });
         });
     }
@@ -87,7 +87,7 @@ class Vouchers extends ClientRequest {
             }).then(response => {
                 resolve(response.data);
             }).catch(error => {
-                reject(this.HttpError(error));
+                reject(error);
             });
         });
     }

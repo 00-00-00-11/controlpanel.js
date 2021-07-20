@@ -13,12 +13,12 @@ class Users extends ClientRequest {
             }).then(response => {
                 resolve(response.data)
             }).catch(error => {
-                reject(this.HttpError(error));
+                reject(error);
             });
         });
     }
 
-    getUserDetails(userid) {
+    getUserData(userid) {
         return new Promise((resolve, reject) => {
             axios({
                 method: 'GET',
@@ -28,12 +28,12 @@ class Users extends ClientRequest {
             }).then(response => {
                 resolve(response.data);
             }).catch(error => {
-                reject(this.HttpError(error));
+                reject(error);
             });
         });
     }
 
-    updateUserDetails(userid, name, email, credits, server_limit, role) {
+    updateUserData(userid, name, email, credits, server_limit, role) {
         return new Promise((resolve, reject) => {
             axios({
                 method: 'PATCH',
@@ -50,7 +50,7 @@ class Users extends ClientRequest {
             }).then(response => {
                 resolve(response.data);
             }).catch(error => {
-                reject(this.HttpError(error));
+                reject(error);
             });
         });
     }
@@ -65,7 +65,7 @@ class Users extends ClientRequest {
             }).then(response => {
                 resolve(response.data);
             }).catch(error => {
-                reject(this.HttpError(error));
+                reject(error);
             });
         });
     }

@@ -1,6 +1,8 @@
 const ClientRequest = require('../ClientRequest');
 const Servers = require('./methods/server');
 const Users = require('./methods/user');
+const Vouchers = require('./methods/voucher');
+
 
 function Mixins(derivedCtor, baseCtors) {
     baseCtors.forEach(baseCtor => {
@@ -11,6 +13,6 @@ function Mixins(derivedCtor, baseCtors) {
 }
 
 class Client extends ClientRequest { }
-Mixins(Client, [Users, Servers]);
+Mixins(Client, [Users, Servers, Vouchers]);
 
 module.exports = Client;

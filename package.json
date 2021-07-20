@@ -1,7 +1,7 @@
 {
   "name": "controlpanel.js",
-  "version": "1.5.1",
-  "description": "API wrapper for ControlPanel",
+  "version": "1.5.2",
+  "description": "API wrapper for ControlPanel.gg",
   "main": "src/index.js",
   "scripts": {
     "test": "node test/index.js",
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/Hiekki4/controlpanel.js/issues"
   },
-  "homepage": "https://github.com/Hiekki4/controlpanel.js#readme",
+  "homepage": "https://controlpaneljs.vercel.app",
   "dependencies": {
     "axios": "^0.21.1"
   },

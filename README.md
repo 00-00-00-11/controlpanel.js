@@ -1,6 +1,6 @@
 # ControlPanel.js
 
-![Stars](https://img.shields.io/github/stars/hiekki4/controlpanel.js?style=for-the-badge) ![Issues](https://img.shields.io/github/issues/hiekki4/controlpanel.js?style=for-the-badge) ![Downloads](https://img.shields.io/npm/wk/controlpanel.js?style=for-the-badge) ![Version](https://img.shields.io/github/package-json/v/hiekki4/controlpanel.js?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/hiekki4/controlpanel.js?style=for-the-badge) ![Issues](https://img.shields.io/github/issues/hiekki4/controlpanel.js?style=for-the-badge) ![Downloads](https://img.shields.io/npm/dt/controlpanel.js?style=for-the-badge) ![Version](https://img.shields.io/github/package-json/v/hiekki4/controlpanel.js?style=for-the-badge)
 
 ### About
 

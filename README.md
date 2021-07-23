@@ -29,6 +29,10 @@ client.getUsers().then(response => {
 
 ```
 
+### Documentation
+
+[Click here](https://controlpaneljs.vercel.app) to see the documentation. 
+
 ### Report Bugs
 
 To report bugs and issues please use the GitHub issue reporting tool: https://github.com/Hiekki4/ControlPanel.js/issues. Any bugs and issues reports are very much appreciated since it helps us to improve ControlPanel.js. Thank you.

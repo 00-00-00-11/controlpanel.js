@@ -1,0 +1,6 @@
+{
+    "getUsers": "getUsers()",
+    "getUserData": "getUserData()",
+    "updateUserData": "updateUserData()",
+    "deleteUser": "deleteUser()"
+  }

@@ -1,0 +1,7 @@
+{
+    "getVouchers": "getVouchers()",
+    "getVoucherData": "getVoucherData()",
+    "createVoucher": "createVoucher()",
+    "updateVoucherData": "updateVoucherData()",
+    "deleteVoucher": "deleteVoucher()"
+}

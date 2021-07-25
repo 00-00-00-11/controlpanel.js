@@ -1,10 +1,11 @@
 {
   "name": "controlpanel.js",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "API wrapper for ControlPanel.gg",
   "main": "src/index.js",
   "scripts": {
     "test": "node test/index.js",
+    "eslint": "eslint .",
     "publish": "npm publish"
   },
   "repository": {

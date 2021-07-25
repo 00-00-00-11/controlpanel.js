@@ -1,0 +1,7 @@
+{
+    "getServers": "getServers()",
+    "getServerData": "getServerData()",
+    "suspendServer": "suspendServer()",
+    "unsuspendServer": "unsuspendServer()",
+    "deleteServer": "deleteServer()"
+  }

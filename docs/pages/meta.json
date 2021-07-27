@@ -1,6 +1,6 @@
 {
   "index": "Getting Started",
-  "user functions": "User Functions",
-  "server functions": "Server Functions",
-  "voucher functions": "Voucher Functions"
+  "user": "User Functions",
+  "server": "Server Functions",
+  "voucher": "Voucher Functions"
 }

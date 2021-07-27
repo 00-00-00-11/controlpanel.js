@@ -1,13 +1,17 @@
 const ClientRequest = require('../../ClientRequest');
 const axios = require('axios');
 
-class Vouchers extends ClientRequest {
+class Servers extends ClientRequest {
 
-    getVouchers() {
+    /**
+     * Returns all servers attached to the dashboard
+     * @returns {object}
+     */
+    getServers() {
         return new Promise((resolve, reject) => {
             axios({
                 method: 'GET',
-                url: `${this.host}/api/vouchers`,
+                url: `${this.host}/api/servers`,
                 maxRedirects: 5,
                 headers: this.headers()
             }).then(response => {
@@ -18,11 +22,16 @@ class Vouchers extends ClientRequest {
         });
     }
 
-    getVoucherData(voucherid) {
+    /**
+     * Returns all the information about a server
+     * @param {string} serverid The server ID
+     * @returns {object}
+     */
+    getServerData(serverid) {
         return new Promise((resolve, reject) => {
             axios({
                 method: 'GET',
-                url: `${this.host}/api/vouchers/${voucherid}`,
+                url: `${this.host}/api/servers/${serverid}`,
                 maxRedirects: 5,
                 headers: this.headers()
             }).then(response => {
@@ -33,41 +42,17 @@ class Vouchers extends ClientRequest {
         });
     }
 
-    createVoucher(memo, code, uses, credits, expires) {
-        return new Promise((resolve, reject) => {
-            axios({
-                method: 'POST',
-                url: `${this.host}/api/vouchers`,
-                maxRedirects: 5,
-                data: {
-                    memo: memo,
-                    code: code,
-                    uses: uses,
-                    credits: credits,
-                    expires_at: expires
-                },
-                headers: this.headers()
-            }).then(response => {
-                resolve(response);
-            }).catch(error => {
-                reject(error);
-            });
-        });
-    }
-
-    updateVoucherData(voucherid, memo, code, uses, credits, expires) {
+    /**
+     * Suspend a server
+     * @param {string} serverid The server ID
+     * @returns {object}
+     */
+    suspendServer(serverid) {
         return new Promise((resolve, reject) => {
             axios({
                 method: 'PATCH',
-                url: `${this.host}/api/vouchers/${voucherid}`,
+                url: `${this.host}/api/servers/${serverid}/suspend`,
                 maxRedirects: 5,
-                data: {
-                    memo: memo,
-                    code: code,
-                    uses: uses,
-                    credits: credits,
-                    expires_at: expires
-                },
                 headers: this.headers()
             }).then(response => {
                 resolve(response.data);
@@ -77,11 +62,36 @@ class Vouchers extends ClientRequest {
         });
     }
 
-    deleteVoucher(voucherid) {
+    /**
+     * Unsuspend a server
+     * @param {string} serverid The server ID
+     * @returns {object}
+     */
+    unsuspendServer(serverid) {
+        return new Promise((resolve, reject) => {
+            axios({
+                method: 'PATCH',
+                url: `${this.host}/api/servers/${serverid}/unsuspend`,
+                maxRedirects: 5,
+                headers: this.headers()
+            }).then(response => {
+                resolve(response.data);
+            }).catch(error => {
+                reject(error);
+            });
+        });
+    }
+
+    /**
+     * Delete a server
+     * @param {string} serverid The user ID
+     * @returns {object}
+     */
+    deleteServer(serverid) {
         return new Promise((resolve, reject) => {
             axios({
                 method: 'DELETE',
-                url: `${this.host}/api/vouchers/${voucherid}`,
+                url: `${this.host}/api/servers/${serverid}`,
                 maxRedirects: 5,
                 headers: this.headers()
             }).then(response => {
@@ -93,4 +103,4 @@ class Vouchers extends ClientRequest {
     }
 }
 
-module.exports = Vouchers;
+module.exports = Servers;

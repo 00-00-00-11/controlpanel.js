@@ -2,6 +2,10 @@
     "getVouchers": "getVouchers()",
     "getVoucherData": "getVoucherData()",
     "createVoucher": "createVoucher()",
-    "updateVoucherData": "updateVoucherData()",
+    "updateVoucherMemo": "updateVoucherMemo()",
+    "updateVoucherCode": "updateVoucherCode()",
+    "updateVoucherCredits": "updateVoucherCredits()",
+    "updateVoucherUses": "updateVoucherUses()",
+    "updateVoucherExpiration": "updateVoucherExpiration()",
     "deleteVoucher": "deleteVoucher()"
 }

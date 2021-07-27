@@ -1,5 +1,5 @@
-# updateUserData()
-Update a user.
+# updateUserName()
+Update a user name.
 
 ```js
 const { Client } = require('controlpanel.js')
@@ -10,7 +10,7 @@ const client = new Client({
 });
 
 // The UserID can either be the user ID or the user Discord ID
-client.updateUserData(('userid', 'name', 'email', 'credits', 'server_limit', 'role').then(response => { 
+client.updateUserName('userid', 'name').then(response => { 
     // response will be a JSON Array like below
     console.log(response)
 }).catch((error) => {

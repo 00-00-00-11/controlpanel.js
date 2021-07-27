@@ -1,6 +1,6 @@
 {
   "name": "controlpanel.js",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "API wrapper for ControlPanel.gg",
   "main": "src/index.js",
   "scripts": {

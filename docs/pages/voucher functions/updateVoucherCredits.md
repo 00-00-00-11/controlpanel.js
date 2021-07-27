@@ -1,5 +1,5 @@
-# updateVoucherData()
-Will update a voucher.
+# updateVoucherCredits()
+Update a voucher credits.
 
 ```js
 const { Client } = require('controlpanel.js')
@@ -9,7 +9,7 @@ const client = new Client({
     apikey: 'CONTROLPANEL_APIKEY'
 });
 
-client.updateVoucherData('VoucherID','memo', 'code', 'uses', 'credits', 'expires').then(response => { 
+client.updateVoucherCredits('VoucherID','credits').then(response => { 
     // response will be a JSON Array like below
     console.log(response)
 }).catch((error) => {

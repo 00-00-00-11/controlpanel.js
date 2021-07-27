@@ -1,6 +1,10 @@
 {
     "getUsers": "getUsers()",
     "getUserData": "getUserData()",
-    "updateUserData": "updateUserData()",
+    "updateUserName": "updateUserName()",
+    "updateUserEmail": "updateUserEmail()",
+    "updateUserCredits": "updateUserCredits()",
+    "updateUserServerLimit": "updateUserServerLimit()",
+    "updateUserRole": "updateUserRole()",
     "deleteUser": "deleteUser()"
   }
